@@ -1,0 +1,56 @@
+/* Estilos personalizados para el admin de Zecat API Connector */
+
+/* Ajustes para el contenedor principal */
+.wrap {
+    margin: 10px 20px 0 2px;
+}
+
+/* Estilos para los botones */
+.button-primary,
+.button-secondary {
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos para el formulario de configuración */
+#zecat-api-settings input[type="text"],
+#zecat-api-settings select {
+    transition: border-color 0.3s ease;
+}
+
+#zecat-api-settings input[type="text"]:focus,
+#zecat-api-settings select:focus {
+    border-color: #3b82f6;
+}
+
+/* Estilos para el estado de sincronización */
+#zecat-sync-status {
+    transition: all 0.3s ease;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 782px) {
+    .wrap {
+        margin-right: 12px;
+    }
+}
+
+/* Estilos para el loader de NProgress */
+#nprogress .bar {
+    background: #3b82f6 !important;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px #3b82f6, 0 0 5px #3b82f6;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #3b82f6;
+    border-left-color: #3b82f6;
+}
+
